@@ -11,7 +11,7 @@ size=${#arr[@]}
 for ((i = 0; i < $size; i++))
 do
     # At i'th iteration right most i elements are sorted and in place.
-    for((j = i; j < $size - i - 1; j++))
+    for((j = 0; j < $size - i - 1; j++))
     do
         if ((${arr[j]} > ${arr[$((j+1))]}))
         then
